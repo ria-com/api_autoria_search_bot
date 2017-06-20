@@ -1,0 +1,25 @@
+{
+  "name": "AutoRiaSearchBot",
+  "version": "1.0.1",
+  "description": "Экспериментальный Telegram-бот, для демострации возможностей API поиска AUTORIA",
+  "author": {
+    "name": "Oleg Cherniy",
+    "email": "oleg.cherniy@gmail.com"
+  },
+  "directories": {},
+  "dependencies": {
+    "config": "*",
+    "fs-readdir-promise": "^1.0.1",
+    "node-schedule": "^1.2.3",
+    "node-telegram-bot-api": "^0.27.0",
+    "request-promise": "^4.2.1",
+    "sleep-promise": "^2.0.0",
+    "valid-url": "^1.0.9"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=7.6.x"
+  }
+}

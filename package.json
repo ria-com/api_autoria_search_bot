@@ -1,6 +1,6 @@
 {
   "name": "AutoRiaSearchBot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Экспериментальный Telegram-бот, для демострации возможностей API поиска AUTORIA",
   "author": {
     "name": "Oleg Cherniy",

@@ -38,13 +38,13 @@ module.exports = {
     },
 
     makeUser: function (userId, query) {
-        userConfig = module.exports.getUser(userId);
+        let userConfig = module.exports.getUser(userId);
         userConfig.query = query;
         userConfig.setDate = new Date().getTime();
         userConfig.watchStatus = true;
 
         console.log(`Create settings for user: ${userId} ...`);
-        request({
+        return request({
             uri: config.ria.api.queryTranslateFromNew+'?'+query,
             json: true
         })
@@ -59,7 +59,7 @@ module.exports = {
 
     switchWatchingUser: function (userId, watchStatus) {
         try {
-            userConfig = require(getUserFilename(userId));
+            let userConfig = require(getUserFilename(userId));
             userConfig.setDate = new Date().getTime();
             userConfig.watchStatus = watchStatus;
             writeUser(userId, userConfig);
